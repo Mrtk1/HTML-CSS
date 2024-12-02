@@ -1,9 +1,27 @@
 body {
     font-family: Arial, sans-serif; /* Yazı tipi ailesi */
     font-size: 11px; /* <p></p> etiketindeki ana yazının boyutu */
-    background-color: #949494; /* Web sayfasının arka plan rengi */
     color: #000000; /* Metin rengi */
-}
+    }
+    
+    @keyframes changeColor {
+        0% {
+            background-color: #1900ff;
+        }
+        50% {
+            background-color: #ff0000;
+        }
+        75% {
+            background-color: #ff0000;
+        }
+        100% {
+            background-color: #1900ff;
+        }
+    }
+    
+    body {
+        animation: changeColor 5s infinite;
+    }
 
 h1 {
     color: #343434; /* Başlık rengi */
